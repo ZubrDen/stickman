@@ -35,6 +35,12 @@ class Game:
     def sec(self):
         pass
 
+    def third(self):
+        pass
+
+    def forth(self):
+        pass
+
 
 g = Game()
 g.mainloop()
