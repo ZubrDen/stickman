@@ -32,7 +32,7 @@ class Game:
             self.tk.update()
             time.sleep(0.01)
 
-    def empty(self):
+    def sec(self):
         pass
 
 
