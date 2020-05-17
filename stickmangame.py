@@ -16,17 +16,16 @@ class Game:
         self.canvas_height = 500
         self.bg = PhotoImage(file='background.gif')
         self.bg2 = PhotoImage(file='background_wood.gif')
+        self.bg3 = PhotoImage(file='background_marble.gif')
+        self.bg4 = PhotoImage(file='background_desert.gif')
+        self.bg5 = PhotoImage(file='background_ice.gif')
+        backgrounds = [self.bg, self.bg2, self.bg3, self.bg4, self.bg5]
         w = self.bg.width()
         h = self.bg.height()
-        drawing = 0
         for x in range(0, 5):
             for y in range(0, 5):
-                if drawing == 1:
-                    self.canvas.create_image(x * w, y * h, image=self.bg, anchor='nw')
-                    drawing = 0
-                else:
-                    self.canvas.create_image(x * w, y * h, image=self.bg2, anchor='nw')
-                    drawing = 1
+                self.canvas.create_image(x * w, y * h, image=backgrounds[2], anchor='nw')
+                random.shuffle(backgrounds)
         self.sprites = []
         self.running = True
 
