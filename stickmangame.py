@@ -125,4 +125,5 @@ platform10 = PlatformSprite(g, PhotoImage(file='platform3.gif'), 230, 200, 32, 1
 g.sprites.append(platform1)
 g.sprites.append(platform2)
 g.sprites.append(platform3)
+g.sprites.append(platform4)
 g.mainloop()
